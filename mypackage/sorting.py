@@ -1,5 +1,5 @@
 def bubble_sort(items):
-     out = items.copy() # in place protection on items
+    out = items.copy() # in place protection on items
     for i in range(len(out)):
         for j in range(len(out)-1-i):
             if out[j] > out[j+1]:
@@ -24,7 +24,7 @@ def merge_sort(items):
     '''Return array of items, sorted in ascending order'''
 
 def quick_sort(items, index=-1):
-    
+
     len_i = len(items)
 
     if len_i <= 1:
