@@ -19,7 +19,7 @@ def merge_sort(items):
     i1 = merge_sort(items[:mid_point])
     i2 = merge_sort(items[mid_point:])
 
-    return merge_sort(i1, i2)
+    return merge(i1, i2)
 
     '''Return array of items, sorted in ascending order'''
 
@@ -28,9 +28,7 @@ def quick_sort(items, index=-1):
     len_i = len(items)
 
     if len_i <= 1:
-        # Logic Error
-        # identified with test run [1,5,4,3, 2, 6, 5, 4, 3, 8, 6, 5, 3, 1]
-        # len <= 1
+        
         return items
 
     pivot = items[index]
