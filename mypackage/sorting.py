@@ -27,7 +27,7 @@ def merge(A, B):
 
     return new_list
 
-    def merge_sort(items):
+def merge_sort(items):
     len_i = len(items)
     if len_i == 1:
         return items
