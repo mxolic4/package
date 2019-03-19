@@ -19,7 +19,7 @@ def merge_sort(items):
     i1 = merge_sort(items[:mid_point])
     i2 = merge_sort(items[mid_point:])
 
-    return merge(i1, i2)
+    return merge_sort(i1, i2)
 
     '''Return array of items, sorted in ascending order'''
 
